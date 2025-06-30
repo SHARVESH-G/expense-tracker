@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import "tailwindcss";
+
+
+
+
+:root{
+  --color-primary:#7300ff;
+  --color-secondary:#d1b8fc;
+
+  --color-gain:#00b100;
+  --color-loss:#ff2052;
+}
+
+
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  color:var(--color-primary);
+}
+
+.input-box{
+  @apply w-full flex justify-between gap-3 text-sm text-black bg-slate-100 rounded px-4 py-3 mb-4 mt-3 border border-slate-200 outline-none;
+}
+
+
+.btn-primary{
+  @apply w-full text-sm font-medium text-white bg-[var(--color-primary)] shadow-lg shadow-purple-600/5 p-[10px] rounded-md my-1 hover:bg-[var(--color-secondary)] hover:text-[var(--color-primary)] cursor-pointer;
+}
